@@ -187,7 +187,7 @@ summary(mlm.fit.train1)
 
 summary(aov(mlm.fit.train1))
 
-fn.model2 = {attend ~ day_of_week + month + bobblehead }
+fn.model2 = {attend ~ month + day_of_week +  bobblehead }
 
 mlm.fit.train2 = lm(fn.model2, data = train)
 summary(mlm.fit.train2)
